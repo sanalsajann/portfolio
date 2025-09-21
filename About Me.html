@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta name="author" content="Sanal Sajan" />
+        <meta name="description" content="An About Me page" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>About Sanal Sajan</title>
+    </head>
+    <body>
+        <h1>About Sanal Sajan</h1>
+        <a href="https://www.linkedin.com/in/sanalsajane/">
+            <img src="img.jpg" alt="Sanal Sajan" id="profile_pic">
+        </a>
+
+        <h2>About Me</h2>
+        <p>I am Sanal Sajan. I am a web developer with a passion for creating beautiful and functional websites. 
+            In my free time, I enjoy travelling, reading, and exploring new technologies.
+        </p>
+
+        <h3>Strengths</h3>
+        <ul>
+            <li>Strong analytical and debugging skills</li>
+            <li>Effective communication and teamwork</li>
+            <li>Adaptability to new technologies</li>
+            <li>Passion for continuous learning</li>
+            <li>Time management and discipline</li>
+        </ul>
+        <h3>Weaknesses</h3>
+        <ul>
+            <li>Sometimes overly detail-oriented</li>
+            <li>Occasionally slow decision making</li>
+        </ul>
+
+        <h2>My Bucket List</h2>
+        <table>
+            <tr>
+                <th>S No.</th>
+                <th>Item</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Visit Japan</td>
+                <td>Not Completed</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Learn to play piano</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Improve Coding Skills</td>
+                <td>In Progress</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Learn to play Badminton</td>
+                <td>In Progress</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Run a marathon</td>
+                <td>Completed</td>
+            </tr>
+        </table>
+
+        <h2>Favorite Movie Clip</h2>
+        <video width="480" controls>
+            <source src="video.mp4" type="video/mp4" />
+        </video>
+
+        <h2>Favorite Song</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg" />
+        </audio>
+
+        <button id="welcome_button">Click Here!</button>
+
+        <script>
+        document.getElementById('welcome_button').addEventListener('click', function() {
+            alert('Welcome to my page!');
+        });
+
+
+        profilePic = document.getElementById('profile_pic');
+        originalBgColor = document.body.style.backgroundColor;
+
+        profilePic.addEventListener('mouseenter', () => {
+            document.body.style.backgroundColor = '#445d74';
+        });
+
+        profilePic.addEventListener('mouseleave', () => {
+            document.body.style.backgroundColor = originalBgColor;
+        });
+        </script> 
+    </body>
+</html>
